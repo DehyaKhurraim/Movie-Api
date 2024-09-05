@@ -1,0 +1,50 @@
+{
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/connect/token",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "authenticationwebapi",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/connect/token"
+    },
+    {
+      "UpstreamPathTemplate": "/api/Movies",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "movieapi",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/Movies",
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "60s",
+        "PeriodTimespan": 5,
+        "Limit": 10
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Movies/{id}",
+      "UpstreamHttpMethod": [ "Get", "Put", "Delete" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "movieapi",
+          "Port": 8080
+        }
+      ],
+      "DownstreamPathTemplate": "/api/Movies/{id}"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:8001"
+  }
+}

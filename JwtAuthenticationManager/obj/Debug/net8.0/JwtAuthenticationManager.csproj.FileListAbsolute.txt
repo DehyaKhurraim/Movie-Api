@@ -1,0 +1,12 @@
+C:\Users\dehya.khurraim\OneDrive - Logiciel Services LLC\Documents\JunkProject\Complete.NetProject\JwtAuthenticationManager\bin\Debug\net8.0\JwtAuthenticationManager.deps.json
+C:\Users\dehya.khurraim\OneDrive - Logiciel Services LLC\Documents\JunkProject\Complete.NetProject\JwtAuthenticationManager\bin\Debug\net8.0\JwtAuthenticationManager.dll
+C:\Users\dehya.khurraim\OneDrive - Logiciel Services LLC\Documents\JunkProject\Complete.NetProject\JwtAuthenticationManager\bin\Debug\net8.0\JwtAuthenticationManager.pdb
+C:\Users\dehya.khurraim\OneDrive - Logiciel Services LLC\Documents\JunkProject\Complete.NetProject\JwtAuthenticationManager\obj\Debug\net8.0\JwtAuthenticationManager.csproj.AssemblyReference.cache
+C:\Users\dehya.khurraim\OneDrive - Logiciel Services LLC\Documents\JunkProject\Complete.NetProject\JwtAuthenticationManager\obj\Debug\net8.0\JwtAuthenticationManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dehya.khurraim\OneDrive - Logiciel Services LLC\Documents\JunkProject\Complete.NetProject\JwtAuthenticationManager\obj\Debug\net8.0\JwtAuthenticationManager.AssemblyInfoInputs.cache
+C:\Users\dehya.khurraim\OneDrive - Logiciel Services LLC\Documents\JunkProject\Complete.NetProject\JwtAuthenticationManager\obj\Debug\net8.0\JwtAuthenticationManager.AssemblyInfo.cs
+C:\Users\dehya.khurraim\OneDrive - Logiciel Services LLC\Documents\JunkProject\Complete.NetProject\JwtAuthenticationManager\obj\Debug\net8.0\JwtAuthenticationManager.csproj.CoreCompileInputs.cache
+C:\Users\dehya.khurraim\OneDrive - Logiciel Services LLC\Documents\JunkProject\Complete.NetProject\JwtAuthenticationManager\obj\Debug\net8.0\JwtAuthenticationManager.dll
+C:\Users\dehya.khurraim\OneDrive - Logiciel Services LLC\Documents\JunkProject\Complete.NetProject\JwtAuthenticationManager\obj\Debug\net8.0\refint\JwtAuthenticationManager.dll
+C:\Users\dehya.khurraim\OneDrive - Logiciel Services LLC\Documents\JunkProject\Complete.NetProject\JwtAuthenticationManager\obj\Debug\net8.0\JwtAuthenticationManager.pdb
+C:\Users\dehya.khurraim\OneDrive - Logiciel Services LLC\Documents\JunkProject\Complete.NetProject\JwtAuthenticationManager\obj\Debug\net8.0\ref\JwtAuthenticationManager.dll

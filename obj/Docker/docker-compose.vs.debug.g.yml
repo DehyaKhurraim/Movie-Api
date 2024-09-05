@@ -1,0 +1,103 @@
+version: '3.4'
+
+services:
+  apigateway:
+    image: apigateway:dev
+    container_name: "ApiGateway"
+    build:
+      args:
+        BUILD_CONFIGURATION: Debug
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "ApiGateway"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      - NUGET_FALLBACK_PACKAGES=
+    volumes:
+      - C:\Users\dehya.khurraim\OneDrive - Logiciel Services LLC\Documents\JunkProject\Complete.NetProject\ApiGateway:/app:rw
+      - C:\Users\dehya.khurraim\OneDrive - Logiciel Services LLC\Documents\JunkProject\Complete.NetProject:/src:rw
+      - C:\Users\dehya.khurraim\vsdbg\vs2017u5:/remote_debugger:rw
+      - C:\Users\dehya.khurraim\.nuget\packages:/.nuget/packages:ro
+      - C:\Users\dehya.khurraim\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+      - C:\Users\dehya.khurraim\AppData\Roaming\ASP.NET\Https:/home/app/.aspnet/https:ro
+      - C:\Users\dehya.khurraim\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+      - C:\Users\dehya.khurraim\AppData\Roaming\Microsoft\UserSecrets:/home/app/.microsoft/usersecrets:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\linux-x64\net8.0:/VSTools:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload:/HotReloadAgent:ro
+
+    entrypoint: "dotnet --roll-forward Major /VSTools/DistrolessHelper/DistrolessHelper.dll --wait"
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /.nuget/packages  \"/app/bin/Debug/net8.0/ApiGateway.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "dotnet --roll-forward Major /VSTools/DistrolessHelper/DistrolessHelper.dll --stop dotnet"
+    tty: true
+  authenticationwebapi:
+    image: authenticationwebapi:dev
+    container_name: "AuthenticationWebApi"
+    build:
+      args:
+        BUILD_CONFIGURATION: Debug
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "AuthenticationWebApi"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      - NUGET_FALLBACK_PACKAGES=
+    volumes:
+      - C:\Users\dehya.khurraim\OneDrive - Logiciel Services LLC\Documents\JunkProject\Complete.NetProject\AuthenticationWebApi:/app:rw
+      - C:\Users\dehya.khurraim\OneDrive - Logiciel Services LLC\Documents\JunkProject\Complete.NetProject:/src:rw
+      - C:\Users\dehya.khurraim\vsdbg\vs2017u5:/remote_debugger:rw
+      - C:\Users\dehya.khurraim\.nuget\packages:/.nuget/packages:ro
+      - C:\Users\dehya.khurraim\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+      - C:\Users\dehya.khurraim\AppData\Roaming\ASP.NET\Https:/home/app/.aspnet/https:ro
+      - C:\Users\dehya.khurraim\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+      - C:\Users\dehya.khurraim\AppData\Roaming\Microsoft\UserSecrets:/home/app/.microsoft/usersecrets:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\linux-x64\net8.0:/VSTools:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload:/HotReloadAgent:ro
+
+    entrypoint: "dotnet --roll-forward Major /VSTools/DistrolessHelper/DistrolessHelper.dll --wait"
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /.nuget/packages  \"/app/bin/Debug/net8.0/AuthenticationWebApi.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "dotnet --roll-forward Major /VSTools/DistrolessHelper/DistrolessHelper.dll --stop dotnet"
+    tty: true
+
+  movieapi:
+    image: movieapi:dev
+    container_name: "MovieAPI"
+    build:
+      args:
+        BUILD_CONFIGURATION: Debug
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "MovieAPI"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      - NUGET_FALLBACK_PACKAGES=
+    volumes:
+      - C:\Users\dehya.khurraim\OneDrive - Logiciel Services LLC\Documents\JunkProject\Complete.NetProject\MovieApi:/app:rw
+      - C:\Users\dehya.khurraim\OneDrive - Logiciel Services LLC\Documents\JunkProject\Complete.NetProject:/src:rw
+      - C:\Users\dehya.khurraim\vsdbg\vs2017u5:/remote_debugger:rw
+      - C:\Users\dehya.khurraim\.nuget\packages:/.nuget/packages:ro
+      - C:\Users\dehya.khurraim\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+      - C:\Users\dehya.khurraim\AppData\Roaming\ASP.NET\Https:/home/app/.aspnet/https:ro
+      - C:\Users\dehya.khurraim\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+      - C:\Users\dehya.khurraim\AppData\Roaming\Microsoft\UserSecrets:/home/app/.microsoft/usersecrets:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\linux-x64\net8.0:/VSTools:ro
+      - C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\HotReload:/HotReloadAgent:ro
+
+    entrypoint: "dotnet --roll-forward Major /VSTools/DistrolessHelper/DistrolessHelper.dll --wait"
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /.nuget/packages  \"/app/bin/Debug/net8.0/MovieAPI.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "dotnet --roll-forward Major /VSTools/DistrolessHelper/DistrolessHelper.dll --stop dotnet"
+    tty: true

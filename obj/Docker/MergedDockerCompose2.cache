@@ -1,0 +1,91 @@
+name: dockercompose3574686175775014328
+services:
+  apigateway:
+    build:
+      context: C:\Users\dehya.khurraim\OneDrive - Logiciel Services LLC\Documents\JunkProject\Complete.NetProject
+      dockerfile: ApiGateway/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+    image: apigateway
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "8001"
+        protocol: tcp
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+  authenticationwebapi:
+    build:
+      context: C:\Users\dehya.khurraim\OneDrive - Logiciel Services LLC\Documents\JunkProject\Complete.NetProject
+      dockerfile: AuthenticationWebApi/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ASPNETCORE_URLS: http://+:8080
+    image: authenticationwebapi
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+  movieapi:
+    build:
+      context: C:\Users\dehya.khurraim\OneDrive - Logiciel Services LLC\Documents\JunkProject\Complete.NetProject
+      dockerfile: MovieApi/Dockerfile
+    depends_on:
+      postgres:
+        condition: service_started
+        required: true
+      redis:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ConnectionStrings__WebApiDatabase: Host=postgres;Database=MovieApi;Username=postgres;Password=123
+      Redis__ConnectionString: redis:6379
+    image: movieapi
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+  postgres:
+    environment:
+      POSTGRES_DB: MovieApi
+      POSTGRES_PASSWORD: "123"
+      POSTGRES_USER: postgres
+    image: postgres:latest
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 5432
+        published: "5432"
+        protocol: tcp
+    volumes:
+      - type: volume
+        source: pgdata
+        target: /var/lib/postgresql/data
+        volume: {}
+  redis:
+    image: redis:alpine
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 6379
+        published: "6379"
+        protocol: tcp
+networks:
+  default:
+    name: dockercompose3574686175775014328_default
+volumes:
+  pgdata:
+    name: dockercompose3574686175775014328_pgdata

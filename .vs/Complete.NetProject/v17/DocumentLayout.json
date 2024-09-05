@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\dehya.khurraim\\OneDrive - Logiciel Services LLC\\Documents\\JunkProject\\Complete.NetProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E8CEBE36-1C50-434C-B6D1-7FBA002E5738}|AuthenticationWebApi\\AuthenticationWebApi.csproj|c:\\users\\dehya.khurraim\\onedrive - logiciel services llc\\documents\\junkproject\\complete.netproject\\authenticationwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8CEBE36-1C50-434C-B6D1-7FBA002E5738}|AuthenticationWebApi\\AuthenticationWebApi.csproj|solutionrelative:authenticationwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E23A55F5-7BB8-4817-9E08-9E7ED75C35C9}|MovieApi\\MovieApi.csproj|c:\\users\\dehya.khurraim\\onedrive - logiciel services llc\\documents\\junkproject\\complete.netproject\\movieapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E23A55F5-7BB8-4817-9E08-9E7ED75C35C9}|MovieApi\\MovieApi.csproj|solutionrelative:movieapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB9FDB93-0A1D-4042-963F-094EE69D9E5C}|JwtAuthenticationManager\\JwtAuthenticationManager.csproj|c:\\users\\dehya.khurraim\\onedrive - logiciel services llc\\documents\\junkproject\\complete.netproject\\jwtauthenticationmanager\\customjwtauthextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB9FDB93-0A1D-4042-963F-094EE69D9E5C}|JwtAuthenticationManager\\JwtAuthenticationManager.csproj|solutionrelative:jwtauthenticationmanager\\customjwtauthextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8CEBE36-1C50-434C-B6D1-7FBA002E5738}|AuthenticationWebApi\\AuthenticationWebApi.csproj|c:\\users\\dehya.khurraim\\onedrive - logiciel services llc\\documents\\junkproject\\complete.netproject\\authenticationwebapi\\identityserverconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8CEBE36-1C50-434C-B6D1-7FBA002E5738}|AuthenticationWebApi\\AuthenticationWebApi.csproj|solutionrelative:authenticationwebapi\\identityserverconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CustomJwtAuthExtension.cs",
+              "DocumentMoniker": "C:\\Users\\dehya.khurraim\\OneDrive - Logiciel Services LLC\\Documents\\JunkProject\\Complete.NetProject\\JwtAuthenticationManager\\CustomJwtAuthExtension.cs",
+              "RelativeDocumentMoniker": "JwtAuthenticationManager\\CustomJwtAuthExtension.cs",
+              "ToolTip": "C:\\Users\\dehya.khurraim\\OneDrive - Logiciel Services LLC\\Documents\\JunkProject\\Complete.NetProject\\JwtAuthenticationManager\\CustomJwtAuthExtension.cs",
+              "RelativeToolTip": "JwtAuthenticationManager\\CustomJwtAuthExtension.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-05T12:27:51.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IdentityServerConfig.cs",
+              "DocumentMoniker": "C:\\Users\\dehya.khurraim\\OneDrive - Logiciel Services LLC\\Documents\\JunkProject\\Complete.NetProject\\AuthenticationWebApi\\IdentityServerConfig.cs",
+              "RelativeDocumentMoniker": "AuthenticationWebApi\\IdentityServerConfig.cs",
+              "ToolTip": "C:\\Users\\dehya.khurraim\\OneDrive - Logiciel Services LLC\\Documents\\JunkProject\\Complete.NetProject\\AuthenticationWebApi\\IdentityServerConfig.cs",
+              "RelativeToolTip": "AuthenticationWebApi\\IdentityServerConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-05T12:24:25.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\dehya.khurraim\\OneDrive - Logiciel Services LLC\\Documents\\JunkProject\\Complete.NetProject\\AuthenticationWebApi\\Program.cs",
+              "RelativeDocumentMoniker": "AuthenticationWebApi\\Program.cs",
+              "ToolTip": "C:\\Users\\dehya.khurraim\\OneDrive - Logiciel Services LLC\\Documents\\JunkProject\\Complete.NetProject\\AuthenticationWebApi\\Program.cs",
+              "RelativeToolTip": "AuthenticationWebApi\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-05T09:25:16.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\dehya.khurraim\\OneDrive - Logiciel Services LLC\\Documents\\JunkProject\\Complete.NetProject\\MovieApi\\Program.cs",
+              "RelativeDocumentMoniker": "MovieApi\\Program.cs",
+              "ToolTip": "C:\\Users\\dehya.khurraim\\OneDrive - Logiciel Services LLC\\Documents\\JunkProject\\Complete.NetProject\\MovieApi\\Program.cs",
+              "RelativeToolTip": "MovieApi\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACwAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-05T09:41:17.335Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
